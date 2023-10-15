@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="contact.css">
+   
+    <script src="contact_validate.js"></script>
+    <script src="https://kit.fontawesome.com/d2901a46a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner">
+
+        <nav>
+            <ul>
+                <li class="brand"><img src="background/lovefist.png" alt="logo" onclick="location.href ='home.html'" style="cursor:pointer">LoveFist</li>
+
+                <li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="playList.html"><i class="fa-solid fa-headphones-simple"></i> PlayList</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-users"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="detailcontainer">
+        <h1>Contact us</h1><br>
+        <p class="contactpara">
+            Need to get in touch with us? Fill out the given form we will contact you as soon as possible 
+           - Thanks and regards
+        </p>
+    </div>
+    <div class="contact">
+        <h3 class="details">Contact Details</h3>
+        <div class="inputBox">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" name="clientName" id="clientName" placeholder="Enter your Name">         
+        </div>
+        <div class="inputBox">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="text" name="clientMail" id="clientMail" placeholder="Enter your Email">         
+        </div>
+        <div class="inputBox">
+           <textarea name="msg" id="feedback" cols="24" rows="4" placeholder="what can we help you with?"></textarea>   
+        </div>
+        <div class="inputBtn">
+           
+            <input type="button" value="Submit" onclick="validateEmail(clientMail,clientName,feedback)" >
+        </div>
+      </div>
+      <section class="footer">
+        <div class="follow">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          Follow us 
+        </div>
+      </section>
+    
+</body>
+</html>
